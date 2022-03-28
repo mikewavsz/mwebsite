@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        background: rgb(32, 33, 36);
+        font-family: "Maven Pro";
+        color: white;
+        padding: 20px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .header-image {
+        height: 100px;
+        width: 300px;
+        background: url("/header.jpeg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto; /* centers it */
+        border-radius: 5px;
+      }
+
+      header > h1 {
+        font-size: 40px;
+        font-weight: 200;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      header > h2 {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      main {
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      .section-content {
+        display: grid;
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .section-content {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .section-title {
+        font-weight: 200;
+        font-size: 25px;
+        opacity: 0.5;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+
+      .article {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.05);
+        border: 1px solid white;
+        padding: 20px;
+        transition: all 0.2s;
+        cursor: pointer;
+        overflow: hidden;
+      }
+
+      .article:hover {
+        transform: scale(1.025);
+      }
+
+      .article > h2 {
+        color: #d92346;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-image"></div>
+      <h1>Mike Wasz</h1>
+      <h2>The Mike formerly known as Wavsz</h2>
+    </header>
+    <main>
+      <section>
+        <div class="section-title">projects</div>
+        <div class="section-content">
+          <a
+            class="article"
+            href="https://mirror.xyz/mikewavsz.eth/wdtmBFZGHRJtJjPZPpLxN25lPPmbcZ1_wEC8gCmCpPM"
+            targer="_blank"
+          >
+            <h2>The Lawyers' Dilemma</h2>
+            <h4>
+              I’ve made a nice little career for myself as a technology lawyer,
+              so far. I've moved from big corporate firms.
+            </h4>
+          </a>
+          <a class="article">
+            <h2>Article ABC</h2>
+            <h4>A musing on something etc here is your article description.</h4>
+          </a>
+          <a class="article">
+            <h2>Article ABC</h2>
+            <h4>A musing on something etc here is your article description.</h4>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title">Articles</div>
+        <div class="section-content">
+          <a
+            class="article"
+            href="https://mirror.xyz/mikewavsz.eth/wdtmBFZGHRJtJjPZPpLxN25lPPmbcZ1_wEC8gCmCpPM"
+            targer="_blank"
+          >
+            <h2>The Lawyers' Dilemma</h2>
+            <div class="published">June 17, 2022</div>
+            <h4>
+              I’ve made a nice little career for myself as a technology lawyer,
+              so far. I've moved from big corporate firms.
+            </h4>
+          </a>
+          <a class="article">
+            <h2>Article ABC</h2>
+            <div class="published">June 15, 2022</div>
+            <h4>A musing on something etc here is your article description.</h4>
+          </a>
+          <a class="article">
+            <h2>Article ABC</h2>
+            <div class="published">June 15, 2022</div>
+            <h4>A musing on something etc here is your article description.</h4>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
